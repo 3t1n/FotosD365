@@ -6,7 +6,7 @@ $guid = $_GET['guid'];
 
 if(isset($_GET["guid"]) && !is_null($guid)){
     $query = "annotations(".$guid.")";
-    $d365 = new D365("057e915e-649e-4c0c-86a5-97d349f622d1", "4VOcrrkF-_~aMzLrXY6FwIwx_14vT0~gnb", "crmservice@cdhucrm.onmicrosoft.com", "Pass@word1","https://cdhucrm.api.crm2.dynamics.com");
+    $d365 = new D365("", "", "", "","");
     $response = $d365->queryOdata($query);
     //baixa as imagens
     header('Content-Description: File Transfer');
